@@ -3,6 +3,7 @@
 //  لإضافة لعبة جديدة: أنشئ ملف اللعبة في games/، ثم أضف سطراً واحداً
 //  هنا. المدينة (الواجهة) ستكتشفها وتعرضها تلقائياً. هذا كل شيء.
 // ════════════════════════════════════════════════════════════════
+import Ludo from './games/classic/Ludo.jsx';
 import Snake from './games/classic/Snake.jsx';
 import TicTacToe from './games/classic/TicTacToe.jsx';
 import Memory from './games/classic/Memory.jsx';
@@ -35,6 +36,7 @@ export const CATEGORIES = [
 
 export const GAMES = [
   // ── كلاسيكية ──
+  { id: 'ludo',     title: 'لودو ملك',    emoji: '🎲', cat: 'classic', tag: '٤ لاعبين', isNew: true,  Component: Ludo },
   { id: 'snake',    title: 'الثعبان',     emoji: '🐍', cat: 'classic', tag: 'كلاسيكية', isNew: true,  Component: Snake },
   { id: 'xo',       title: 'إكس أو',      emoji: '⭕', cat: 'classic', tag: 'لاعبان',   Component: TicTacToe },
   { id: 'memory',   title: 'الذاكرة',     emoji: '🃏', cat: 'classic', tag: 'تركيز',    Component: Memory },
